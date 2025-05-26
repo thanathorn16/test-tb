@@ -1,0 +1,77 @@
+/* Login.css */
+
+.login-container {
+  max-width: 320px;
+  width: 100%;
+  margin: 0 auto; 
+  font-family: sans-serif;
+
+  height: 100vh;         
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;    
+  padding: 0 16px;     
+  box-sizing: border-box;
+}
+
+.login-title {
+  margin-bottom: 20px;
+}
+
+.login-label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.login-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.spacer-20 {
+  height: 20px;
+}
+
+.spacer-16 {
+  height: 16px;
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.register-link {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  user-select: none;
+}
+
+.input-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px; /* spacing between rows */
+}
+
+.input-row label {
+  flex: 0 0 160px; /* fixed width for label */
+  font-weight: bold;
+  margin-right: 16px;
+}
+
+.input-row input {
+  flex: 1; /* take the rest of the space */
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
