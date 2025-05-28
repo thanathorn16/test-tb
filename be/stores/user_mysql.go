@@ -1,11 +1,14 @@
 package stores
 
 import (
+	"be/services/login"
 	"context"
 	"errors"
 
 	"gorm.io/gorm"
 )
+
+var _ login.UserRepo = (*userDB)(nil)
 
 type userDB struct {
 	db *gorm.DB

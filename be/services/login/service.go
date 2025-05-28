@@ -25,16 +25,6 @@ func (s *loginService) Login(ctx context.Context, logger *zap.Logger, req Reques
 		return "", err
 	}
 
-	// if userID == "" {
-	// 	logger.Info("user not found, creating new user")
-	// 	userID := uuid.New().String()
-	// 	err = s.userRepo.CreateUser(ctx, userID, req.Username, req.Password)
-	// 	if err != nil {
-	// 		logger.Error("failed to create user", zap.Error(err))
-	// 		return "", err
-	// 	}
-	// }
-
 	claims := jwt.MapClaims{
 		"userID": userID,
 		"exp":    time.Now().Add(time.Hour * 1).Unix(),
